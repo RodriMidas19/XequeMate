@@ -1,0 +1,17 @@
+.heart{
+    width: 50;
+    height: 50;
+    margin-left: 10px;
+}
+.mainForm{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+}
+.inside-div{
+    width: 650px;
+    height: 300px;
+    border-radius: 5%;
+    background-color: blanchedalmond;
+}
