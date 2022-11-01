@@ -63,7 +63,7 @@
     height: 250px;
     border-radius: 100%;
 }
-.imgModldura{
+.imgMoldura{
     margin-top: 10px;
     margin-left: 10px;
     width: 230px;
@@ -77,4 +77,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
