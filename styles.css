@@ -84,3 +84,11 @@
     height: 500px;
     background-color: blanchedalmond;
 }
+.btn-primary{
+    background-color: blanchedalmond;
+    border: 0;
+    color: black;
+}
+.btn-primary:hover{
+    background-color: rgb(203, 92, 92);
+}
