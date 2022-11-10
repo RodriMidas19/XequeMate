@@ -7,22 +7,13 @@
     <title>Nós</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </head>
 <body style="background-color: blanchedalmond;" >
-    <script type="text/javascript">
-        const audio = new Audio();
-        audio.src = "./mp3/musica.mp3";
-
-        function hideButton(x){
-            x.style.display = "none";
-        }
-        function down(){
-            document.getElementById('msg').scrollIntoView();
-        }
-    </script>
     <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-        <button style="margin-top: 30px;" class="btn btn-danger" onclick="audio.play(); hideButton(this);">Se me Amas carrega!</button>
+        <button style="margin-top: 30px;" class="btn btn-danger" onclick="audio.play(); hideButton(this);">Ao carregares irás ter umas
+        surpresa e após isso por de trás de cada mês algo espera-te</button>
         <table style="margin-top: 5%;">
             <tr>
                 <td>
@@ -36,24 +27,21 @@
                 <td>
                     <div class="quad">
                         <div class="moldura">
-                            <img src="./img/mesDois.JPG" class="imgMoldura">
-                        </div>
+                          <a data-bs-toggle="modal" data-bs-target="#SecMes"><img src="./img/mesDois.JPG" class="imgMoldura"></a>                        </div>
                         <h3>2ºMês</h3>
                     </div>
                 </td>
                 <td>
                     <div class="quad">
                         <div class="moldura">
-                            <img src="./img/mesTres.jpg" class="imgMoldura">
-                        </div>
+                          <a data-bs-toggle="modal" data-bs-target="#TerMes"><img src="./img/mesTres.jpg" class="imgMoldura"></a>                        </div>
                         <h3>3ºMês</h3>
                     </div>
                 </td>
                 <td>
                     <div class="quad">
                         <div class="moldura">
-                            <img src="./img/mesQuatro.JPG" class="imgMoldura">
-                        </div>
+                          <a data-bs-toggle="modal" data-bs-target="#QuaMes"><img src="./img/mesQuatro.JPG" class="imgMoldura"></a>                        </div>
                         <h3>4ºMês</h3>
                     </div>
                 </td>
@@ -62,45 +50,36 @@
                 <td>
                     <div class="quad">
                         <div class="moldura">
-                            <img src="./img/mesCinco.JPG" class="imgMoldura">
-                        </div>
+                          <a data-bs-toggle="modal" data-bs-target="#QuiMes"><img src="./img/mesCinco.JPG" class="imgMoldura"></a>                        </div>
                         <h3>5ºMês</h3>
                     </div>
                 </td>
                 <td>
                     <div class="quad">
                         <div class="moldura">
-                            <img src="./img/mesSeis.JPG" class="imgMoldura">
-                        </div>
+                          <a data-bs-toggle="modal" data-bs-target="#SexmMes"><img src="./img/mesSeis.JPG" class="imgMoldura"></a>                        </div>
                         <h3>6ºMês</h3>
                     </div>
                 </td>
                 <td>
                     <div class="quad">
                         <div class="moldura">
-                            <img src="./img/mesSete.JPG" class="imgMoldura">
-                        </div>
+                          <a data-bs-toggle="modal" data-bs-target="#SetMes"><img src="./img/mesSete.JPG" class="imgMoldura"></a>                        </div>
                         <h3>7ºMês</h3>
                     </div>
                 </td>
                 <td>
                     <div class="quad">
                         <div class="moldura">
-                            <img src="./img/mesOito.JPG" class="imgMoldura">
-                        </div>
+                          <a data-bs-toggle="modal" data-bs-target="#OitMes"><img src="./img/mesOito.JPG" class="imgMoldura"></a>                        </div>
                         <h3>8ºMês</h3>
                     </div>
                 </td>
             </tr>
         </table>
+        <a href="#myVideo" class="btn btn-danger" onclick="audio.pause();">Se já descobriste tudo, continua aqui...</a>
         <div class="entre"></div>
-        <div class="card" style="background-color: blanchedalmond; border-color:blanchedalmond;" id="msg">
-            <div class="card-body">
-              <h5 class="card-title">Mensagem para ti...</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+          <video src="./mp4/video.mp4" controls id="myVideo"></video>
     </div>
 
     <div class="modal fade" id="PrimMes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -116,7 +95,7 @@
             </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Carrega no próximo mês</button>
-            </form>
+                </div>
           </div>
         </div>
       </div>
@@ -127,10 +106,12 @@
               <h1 class="modal-title fs-5" id="exampleModalLabel">2ºMês</h1>
             </div>
             <div class="modal-body">
-              <p></p>
+              <p>Aqui nesta foto já tinhamos 2 mesinhos, tanta felicidade que me dás, a minha vida mudou completamente para melhor porque finalmente
+                tinha um amor verdadeiro que sabia que ia lá estar sempre.
+              </p>
             </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#terMes">Próximo mês</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Carrega no próximo mês</button>
                 </div>
           </div>
         </div>
@@ -142,25 +123,31 @@
               <h1 class="modal-title fs-5" id="exampleModalLabel">3ºMês</h1>
             </div>
             <div class="modal-body">
-              <p></p>
+              <p>E já lá iam três meses de nós e da nossa nova vida, fomos pela primerira vez à praia e foi algo muito especial, gravamos 
+                aqueles vídeos das trends o que rendeu umas boas views no Tiktok ahahhhaha, mas sem dúvida mais um mês de felicidade e de
+                algo que sempre foi e sempre será muito especial.
+              </p>
             </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#QuaMes">Próximo mês</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Carrega no próximo mês</button>
                 </div>
           </div>
         </div>
       </div>
-      <div class="modal fade" id="QuamMes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="QuaMes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="exampleModalLabel">4ºMês</h1>
             </div>
             <div class="modal-body">
-              <p></p>
+              <p>4º mesinhos e estávamos nós cada vez mais felizes, a cada dia que passáva o nosso brilho aumentáva cada vez mais e sempre 
+                a perceber cada vez mais que serás a mulher da minha vida, porque sem dúvida alguma por tudo o que esperei por ti, quero estar
+                contigo até que a morte nos separe
+              </p>
             </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#QuiMes">Próximo mês</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Carrega no próximo mês</button>
                 </div>
           </div>
         </div>
@@ -175,7 +162,7 @@
               <p></p>
             </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SexmMes">Próximo mês</button>
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Carrega no próximo mês</button>
                 </div>
           </div>
         </div>
@@ -190,7 +177,7 @@
               <p></p>
             </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SetMes">Próximo mês</button>
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Carrega no próximo mês</button>
                 </div>
           </div>
         </div>
@@ -205,7 +192,7 @@
               <p></p>
             </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#OitMes">Próximo mês</button>
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Carrega no próximo mês</button>
                 </div>
           </div>
         </div>
@@ -221,7 +208,7 @@
             </div>
             <form action="" method="POST">
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SecmMes">Próximo mês</button>
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Carrega no próximo mês</button>
                 </div>
             </form>
           </div>
