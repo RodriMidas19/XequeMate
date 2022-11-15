@@ -15,18 +15,15 @@
 </head>
 <body>
         <div class="mainPage">
-            <div class="cardMain shadow">
-                <br>
+            <div class="main">
                 <h2 class="insideCard">MiMi + Carolii = Xeque-Mate</h2>
                 <br>
-                <div class="moldura insideCard">
-                    <img  class="imgMoldura insideCard" src="/img/xeque-mate.JPG"   alt="">
-                </div>
+                <img  class="imgMain shadow" src="./img/xeque-mate.JPG" alt="Amo-te">
                 <br>
-                    <button class="btnM insideCard" id="btn" onclick="redirectCustom()" >
-                        <span class="text">Carrega</span>
-                        <i class="ri-check-line icon"></i>
-                    </button>   
+                <button class="btnM insideCard" id="btn" onclick="redirectCustom()" >
+                    <span class="text">Carrega</span>
+                    <i class="ri-check-line icon"></i>
+                </button>   
             </div>
         </div>
 </body>
@@ -34,9 +31,9 @@
 
 <script>
     function toPage(){
-        window.location =  "https://xequemate.me/fotos.html"
+        window.location =  "http://xequemate.me/gallery.html";
     }
     function redirectCustom(){
-        setTimeout('toPage()', 5000);
+        setTimeout('toPage()', 3000);
     }
 </script>

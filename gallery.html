@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <title>A Nossa Galeria</title>
+</head>
+<body>
+    <div class="container">
+            <!-- Gallery -->
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <center>
+                    <button style="margin-top: 30px;" class="btn btn-danger" onclick="audio.play(); hideButton(this);">Carrega-me</button>
+                    <h4>1º Mês</h4>
+                </center>
+                <a data-bs-toggle="modal" data-bs-target="#PrimMes"><img src="./img/umMes.JPG" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water"/></a>
+                <center>
+                    <h4>3º Mês</h4>
+                </center>
+                <a data-bs-toggle="modal" data-bs-target="#TerMes"><img src="./img/mesTres.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape"/></a>
+                <center>
+                    <h4>7º Mês</h4>
+                </center>
+                <a data-bs-toggle="modal" data-bs-target="#SetMes"><img src="./img/mesSete.JPG" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape"/></a>
+            </div>
+        
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <center>
+                    <h4>2º Mês</h4>
+                </center>
+                <a data-bs-toggle="modal" data-bs-target="#SecMes"><img src="./img/mesDois.JPG" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds"/></a>
+                <center>
+                    <h4>6º Mês</h4>
+                </center>
+                <a data-bs-toggle="modal" data-bs-target="#SexMes"><img src="./img/mesSeis.JPG" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water"/></a>
+                <center>
+                    <h4>9º Mês</h4>
+                </center>
+                <a data-bs-toggle="modal" data-bs-target="#NovMes"><img src="./img/mesNove.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water"/></a>
+
+                
+            </div>
+        
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <center>
+                    <h4>4º Mês</h4>
+                </center>
+                <a data-bs-toggle="modal" data-bs-target="#QuaMes"><img src="./img/mesQuatro.JPG" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea"/></a>
+                <center>
+                    <h4>5º Mês</h4>
+                </center>
+                <a data-bs-toggle="modal" data-bs-target="#QuiMes"><img src="./img/mesCinco.JPG" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park"/></a>
+                <center>
+                    <h4>8º Mês</h4>
+                </center>
+                <a data-bs-toggle="modal" data-bs-target="#OitMes"><img src="./img/mesOito.JPG" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water"/></a>
+                <center>
+                    <!--<a href="#myVideo" class="btn btn-danger" onclick="audio.pause();">Se já descobriste tudo, continua aqui...</a>-->
+                </center>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <video src="./mp4/praia.mp4" loop autoplay id="myVideo" class="w-100 shadow-1-strong rounded mb-4"></video>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <video src="./mp4/nosso.mp4" loop autoplay id="myVideo" class="w-100 shadow-1-strong rounded mb-4"></video>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <video src="./mp4/espelho.mp4" loop autoplay id="myVideo" class="w-100 shadow-1-strong rounded mb-4"></video>
+            </div>
+            
+
+
+            <div class="modal fade" id="PrimMes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">1ºMês</h1>
+                    </div>
+                    <div class="modal-body">
+                      <p>Bem em fevereiro quando tudo começou, foi algo diferente, algo que tu tinha vivido, sentia-me uma criança a abrir presentes
+                        na noite de natal. Era algo que já esperava há muito tempo e ali finalmente se tinha tornado realidade.
+                      </p>
+                    </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Carrega no próximo mês</button>
+                        </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="SecMes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">2ºMês</h1>
+                </div>
+                <div class="modal-body">
+                  <p>Aqui nesta foto já tinhamos 2 mesinhos, tanta felicidade que me dás, a minha vida mudou completamente para melhor porque finalmente
+                    tinha um amor verdadeiro que sabia que ia lá estar sempre.
+                  </p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Carrega no próximo mês</button>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="TerMes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">3ºMês</h1>
+                </div>
+                <div class="modal-body">
+                  <p>E já lá iam três meses de nós e da nossa nova vida, fomos pela primerira vez à praia e foi algo muito especial, gravamos 
+                    aqueles vídeos das trends o que rendeu umas boas views no Tiktok ahahhhaha, mas sem dúvida mais um mês de felicidade e de
+                    algo que sempre foi e sempre será muito especial.
+                  </p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Carrega no próximo mês</button>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="QuaMes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">4ºMês</h1>
+                </div>
+                <div class="modal-body">
+                  <p>4º mesinhos e estávamos nós cada vez mais felizes, a cada dia que passáva o nosso brilho aumentáva cada vez mais e sempre 
+                    a perceber cada vez mais que serás a mulher da minha vida, porque sem dúvida alguma por tudo o que esperei por ti, quero estar
+                    contigo até que a morte nos separe
+                  </p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Carrega no próximo mês</button>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="QuiMes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">5ºMês</h1>
+                </div>
+                <div class="modal-body">
+                  <p>4º mesinhos e estávamos nós cada vez mais felizes, a cada dia que passáva o nosso brilho aumentáva cada vez mais e sempre 
+                    a perceber cada vez mais que serás a mulher da minha vida, porque sem dúvida alguma por tudo o que esperei por ti, quero estar
+                    contigo até que a morte nos separe
+                  </p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Carrega no próximo mês</button>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="SexMes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">6ºMês</h1>
+                </div>
+                <div class="modal-body">
+                  <p>4º mesinhos e estávamos nós cada vez mais felizes, a cada dia que passáva o nosso brilho aumentáva cada vez mais e sempre 
+                    a perceber cada vez mais que serás a mulher da minha vida, porque sem dúvida alguma por tudo o que esperei por ti, quero estar
+                    contigo até que a morte nos separe
+                  </p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Carrega no próximo mês</button>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="SetMes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">7ºMês</h1>
+                </div>
+                <div class="modal-body">
+                  <p>4º mesinhos e estávamos nós cada vez mais felizes, a cada dia que passáva o nosso brilho aumentáva cada vez mais e sempre 
+                    a perceber cada vez mais que serás a mulher da minha vida, porque sem dúvida alguma por tudo o que esperei por ti, quero estar
+                    contigo até que a morte nos separe
+                  </p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Carrega no próximo mês</button>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="OitMes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">8ºMês</h1>
+                </div>
+                <div class="modal-body">
+                  <p>4º mesinhos e estávamos nós cada vez mais felizes, a cada dia que passáva o nosso brilho aumentáva cada vez mais e sempre 
+                    a perceber cada vez mais que serás a mulher da minha vida, porque sem dúvida alguma por tudo o que esperei por ti, quero estar
+                    contigo até que a morte nos separe
+                  </p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Carrega no próximo mês</button>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="NovMes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">9ºMês</h1>
+                </div>
+                <div class="modal-body">
+                  <p>4º mesinhos e estávamos nós cada vez mais felizes, a cada dia que passáva o nosso brilho aumentáva cada vez mais e sempre 
+                    a perceber cada vez mais que serás a mulher da minha vida, porque sem dúvida alguma por tudo o que esperei por ti, quero estar
+                    contigo até que a morte nos separe
+                  </p>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Carrega no próximo mês</button>
+                    </div>
+              </div>
+            </div>
+        </div>
+</body>
+</html>
